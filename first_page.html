@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<head>
+	<title>My First Webpage</title>
+
+</head>
+<body>
+	
+	<h1>
+			<ul class = "first">
+		<li><a href="first_page.html"><img src="home.jpg" height="35px" width="35px"><img src="homes.png" height="35px" width="70px"></a></li>
+		<li><a href="second_page.html"><img src="galer.jpg" height="35px" width="35px"><img src="pic.png" height="35px" width="80px"></a></li>
+		<li><a href="third_page.html"><img src="about.png" height="35px" width="35px"><img src="ab.png" height="35px" width="80px"></a></li>
+	</ul>
+		<center>THIS WEBPAGE IS ALL ABOUT ME</center>
+	</h1>
+<section>
+	<center>
+  <img class="mySlides" src="ss.png"
+  style= "width:65%">
+  <img class="mySlides" src="sss.png"
+  style="width:65%">
+  <img class="mySlides" src="ssss.png"
+  style="width:65%"></center>
+</section>
+<br>
+
+  <h2 class="w3-wide"><center><font color="white"> BOSS HARVS</font></h2>
+  <p><font color="white"><center><i>Who am I?</i></p>
+  <p><font color="white">
+  	<center> This website was desgined by me personaly, a BSIT student in Gordon college,<br> this webpage is all about who am i, about John Harvey Agrabio,<br> as you move in the other page you'll see or you will have an idea of who am I,<br> I decide to make this idea of presenting who am I,<br> because i believe everyone has a story to tell, as you move along and explore every botton<br> and functionalities of this webpage, you will know who am i</center></p>
+
+
+
+	<br><br><br><br><br><br>
+	<div class="footer">
+		<p align="right">
+			<font size="5"> Contact #: +6395-6450-6930 <img src="black.png" width="50" height="50">
+			<a href="https://upload.facebook.com/harvey2.agrabio"><img src="fb.png"width="50" height="50"> </a>
+			<a href="https://www.youtube.com/channel/UCGdSvVFPwWMf-SKrXGLORQQ/featured?view_as=subscriber"><img src="yt.png"width="50" height="50"> </a>
+			<a href="https://www.pinterest.ph/agrabiobitot/_saved/"><img src="pint.png"width="60" height="60"></a>
+		</p>
+		</div>
+	
+<style>
+ul.first {
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+  background-color: black;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: Dodgerblue;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-image: url('2020.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  color: white;
+  font-family: tahoma;
+  font-size: 250%;
+
+}
+
+</style>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+	
+</html>
